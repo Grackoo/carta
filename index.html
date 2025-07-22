@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños, Mi Amor</title>
+    <!-- Carga de Tailwind CSS para estilos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de la fuente Inter de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif; /* Establece la fuente principal */
+            /* Fondo con imagen de lili acapulco */
+            background-image: url('https://i.ibb.co/HpMZnwvG/unnamed-1-1.png'); /* Placeholder para la imagen de fondo */
+            background-size: cover; /* Cubre todo el área */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+            display: flex; /* Usa flexbox para centrar el contenido */
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            padding: 20px; /* Espaciado alrededor del contenido */
+        }
+        .letter-container {
+            background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco semitransparente para la carta */
+            padding: 40px; /* Espaciado interno */
+            border-radius: 15px; /* Bordes redondeados */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Sombra para un efecto elevado */
+            max-width: 700px; /* Ancho máximo de la carta */
+            width: 100%; /* Ocupa todo el ancho disponible hasta el max-width */
+            text-align: center; /* Centra el texto */
+            line-height: 1.8; /* Espaciado entre líneas */
+            font-size: 1.15rem; /* Tamaño de fuente ligeramente mayor */
+            color: #333; /* Color de texto oscuro */
+            position: relative; /* Para posicionar los corazones */
+            /* Estilo para simular letra cursiva con una fuente bonita */
+            font-family: 'Dancing Script', cursive; /* Fuente cursiva para el cuerpo de la carta */
+        }
+        /* Importa una fuente cursiva para el cuerpo de la carta */
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+        .hearts-top {
+            position: absolute;
+            top: -10px; /* Se ajustó la posición para mover los corazones más arriba */
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+        .heart {
+            color: #e74c3c; /* Color de los corazones */
+            font-size: 2rem; /* Tamaño de los corazones */
+        }
+        .signature {
+            margin-top: 30px; /* Espacio antes de la firma */
+            font-size: 1.2rem; /* Tamaño de fuente para la firma */
+            font-weight: bold; /* Negrita para la firma */
+            text-align: right; /* Alinea la firma a la derecha */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .letter-container {
+                padding: 25px; /* Reduce el padding en pantallas pequeñas */
+                font-size: 1rem; /* Reduce el tamaño de fuente */
+            }
+            .heart {
+                font-size: 1.5rem; /* Reduce el tamaño de los corazones */
+            }
+            .hearts-top {
+                top: -15px; /* Ajuste para pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="letter-container">
+        <div class="hearts-top">
+            <span class="heart">❤️</span>
+            <span class="heart">❤️</span>
+        </div>
+        <p>Mi amor,</p>
+        <p>Hoy celebramos tus maravillosos 26 años, y mi corazón rebosa de alegría al poder compartir este día contigo. Eres, sin duda, lo que más amo en este mundo, la persona que ilumina cada uno de mis días con tu sonrisa y tu presencia.</p>
+        <p>Me siento increíblemente orgulloso de cada paso que has dado, de cada avance que has logrado. Tu fuerza, tu dedicación y tu hermosa forma de ser me inspiran constantemente. Eres una mujer admirable y ver cómo creces y te fortaleces me llena de una felicidad inmensa.</p>
+        <p>Que este nuevo año de vida te traiga aún más éxitos, más sueños cumplidos y toda la felicidad que mereces. Siempre estaré aquí para apoyarte, para amarte con todo mi ser.</p>
+        <p>Feliz cumpleaños, mi vida. Te amo más de lo que las palabras pueden expresar.</p>
+        <p class="signature">Con todo mi amor.</p>
+        <p class="signature"></p>
+    </div>
+</body>
+</html>
